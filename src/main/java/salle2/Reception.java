@@ -16,7 +16,7 @@ public class Reception extends JPanel{
 	private BufferedImage image;
 	public Reception() throws IOException {
 		super();
-		image = ImageIO.read(new File("C:\\Users\\kaiss\\OneDrive\\Bureau\\JAVA2.0\\projet\\Swing1\\salle\\src\\salle2\\TOO_restaurant_Panoramique_vue_Paris_nuit_v2-scaled.jpg"));
+		image = ImageIO.read(new File("Images\\TOO_restaurant_Panoramique_vue_Paris_nuit_v2-scaled.jpg"));
 		
 	}
 	//painting method not very impressive (best i could do though)
