@@ -61,6 +61,9 @@ public class CommandPane extends JPanel{
 	public ArrayList<JButton> getButtons() {
 		return buttons;
 	}
+	public JTextArea getTextArea() {
+		return text;
+	}
 	public void setWidth(int width) {
 		text.setSize(new Dimension(width,text.getHeight()));
 	}
