@@ -67,7 +67,7 @@ public class Controller extends AbstractAction{
 						order.setTimestamp(xxx);
 						if(order.isEmpty()==false) {
 							try {
-							FileWriter file = new FileWriter("C:\\Users\\kaiss\\Downloads\\order_"+xxx+".json");
+							FileWriter file = new FileWriter("order_"+xxx+".json");
 							ObjectMapper mapper=new ObjectMapper();
 							mapper.enable(SerializationFeature.INDENT_OUTPUT);
 							String str=mapper.writeValueAsString(order);
