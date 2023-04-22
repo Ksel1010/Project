@@ -37,7 +37,7 @@ public class Receipt {
 		temporaryD.addAll(ord.getDesserts());
 		order.setDesserts(temporaryD);
 	}
-	public void print() {
+	public String toString() {
 		String str="******************************************************"+System.lineSeparator();
 		ArrayList<ArrayList<Plat>> liste =new ArrayList(Arrays.asList(order.getStarters(),order.getMain_courses(),order.getDesserts()));
 		for (ArrayList<Plat > al:liste) {
@@ -57,7 +57,7 @@ public class Receipt {
 			}
 		}
 		str+="total: 	"+total+"€ 		dont TVA: "+ total/5.0+"€ (20%)"+System.lineSeparator()+"******************************************************";
-		System.out.println(str);
+		return (str);
 	}
 	public void clear() {
 		order=new Order();

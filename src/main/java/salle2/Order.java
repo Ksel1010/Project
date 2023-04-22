@@ -161,9 +161,7 @@ public class Order {
 					replacement.add(toDelete);
 					commandes.put("desserts",replacement);;
 				}
-				
 			}
-
 			lastAddedMeals.remove(lastMeal);
 			
 		}

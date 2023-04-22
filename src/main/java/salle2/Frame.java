@@ -39,6 +39,7 @@ public class Frame extends JFrame{
 	private void setUpAndDisplay(String file) throws StreamReadException, DatabindException, IOException {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setSize(new Dimension(800,400));
+		this.setLocation(45, 210);
 		/**if we want the application to display over all of the screen please use the line below**/
 //		setExtendedState(JFrame.MAXIMIZED_BOTH); 
 		

@@ -93,7 +93,18 @@ public class Controller extends AbstractAction{
 						receipt.setStarterPrice(myFrame.getSettings().getStarterPrice());
 						receipt.setMain_coursePrice(myFrame.getSettings().getMain_coursePrice());
 						receipt.setDessertPrice(myFrame.getSettings().getDessertPrice());
-						receipt.print();
+						String str=receipt.toString();
+						System.out.println(str);
+					FileWriter recu;
+					try {
+						recu = new FileWriter("receipt.txt");
+						recu.write(str);
+						recu.close();
+					} catch (IOException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
+						
 						myFrame.getStatisticPane().refreshTotal(receipt.getTotal());
 						receipt.clear();
 						break;
